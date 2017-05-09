@@ -1,0 +1,27 @@
+{
+  "name": "make-it-restart",
+  "version": "1.0.1",
+  "description": "restart script node javascript",
+  "main": "index.js",
+  "scripts": {
+    "test-watch": "npm test -- --watch",
+    "test": "mocha -t 5000 test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuoua/make-it-restart.git"
+  },
+  "keywords": [
+    "restart",
+    "node"
+  ],
+  "author": "anuoua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anuoua/make-it-restart/issues"
+  },
+  "homepage": "https://github.com/anuoua/make-it-restart#readme",
+  "devDependencies": {
+    "tree-kill": "^1.1.0"
+  }
+}
