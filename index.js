@@ -7,6 +7,7 @@ module.exports = function (opts) {
         script: undefined,
         exec: undefined,
         initRun: false,
+        env: undefined,
     }, opts)
 
     if (!config.script && !config.exec) throw new Error('missing options')
@@ -18,7 +19,9 @@ module.exports = function (opts) {
     if (config.initRun === true) execFn()
 
     function execFn() {
-        child = exec(cmd)
+        child = exec(cmd, {
+            env: Object.assign({}, process.env, config.env)
+        })
         readline.createInterface({
             input: child.stdout,
             output: process.stdout,
