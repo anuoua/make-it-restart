@@ -3,10 +3,7 @@
   "version": "1.1.0",
   "description": "restart script node javascript",
   "main": "index.js",
-  "scripts": {
-    "test-watch": "npm test -- --watch",
-    "test": "mocha -t 5000 test/test.js"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anuoua/make-it-restart.git"
@@ -21,7 +18,8 @@
     "url": "https://github.com/anuoua/make-it-restart/issues"
   },
   "homepage": "https://github.com/anuoua/make-it-restart#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "tree-kill": "^1.1.0"
   }
 }
