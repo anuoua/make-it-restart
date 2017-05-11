@@ -1,6 +1,6 @@
 {
   "name": "make-it-restart",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "restart script node javascript",
   "main": "index.js",
   "scripts": {},
