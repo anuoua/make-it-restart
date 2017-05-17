@@ -1,5 +1,5 @@
 const treeKill = require('tree-kill')
-const { exec, spawnSync } = require('child_process')
+const spawnCommand = require('spawn-command')
 const readline = require('readline');
 
 module.exports = function (opts) {
@@ -19,7 +19,7 @@ module.exports = function (opts) {
     if (config.initRun === true) execFn()
 
     function execFn() {
-        child = exec(cmd, {
+        child = spawnCommand(cmd, {
             env: Object.assign({}, process.env, config.env)
         })
         readline.createInterface({

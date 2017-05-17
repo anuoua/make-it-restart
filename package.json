@@ -20,6 +20,7 @@
   "homepage": "https://github.com/anuoua/make-it-restart#readme",
   "devDependencies": {},
   "dependencies": {
+    "spawn-command": "0.0.2-1",
     "tree-kill": "^1.1.0"
   }
 }
