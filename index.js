@@ -1,6 +1,5 @@
 const treeKill = require('tree-kill')
 const spawnCommand = require('spawn-command')
-const readline = require('readline');
 
 module.exports = function (opts) {
     let config = Object.assign({
@@ -20,15 +19,8 @@ module.exports = function (opts) {
 
     function execFn() {
         child = spawnCommand(cmd, {
+            stdio: 'inherit',
             env: Object.assign({}, process.env, config.env)
-        })
-        readline.createInterface({
-            input: child.stdout,
-            output: process.stdout,
-        })
-        readline.createInterface({
-            input: child.stderr,
-            output: process.stderr,
         })
     }
 
