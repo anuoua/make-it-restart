@@ -1,26 +1,20 @@
 const treeKill = require('tree-kill')
-const spawnCommand = require('spawn-command')
+const spawnRun = require('spawn-run')
+/**
+ * @param  {string} command - commands like npm run.
+ * @param  {object} env - object of environment variables.
+ */
+module.exports = function (command, env) {
+    let child
 
-module.exports = function (opts) {
-    let config = Object.assign({
-        script: undefined,
-        exec: undefined,
-        initRun: false,
-        env: undefined,
-    }, opts)
-
-    if (!config.script && !config.exec) throw new Error('missing options')
-
-    const cmd = config.exec || `node ${config.script}`
-
-    let child;
-
-    if (config.initRun === true) execFn()
+    if (!command || typeof command !== 'string') {
+        throw new Error('Please input right command')
+    }
 
     function execFn() {
-        child = spawnCommand(cmd, {
+        child = spawnRun(command, {
             stdio: 'inherit',
-            env: Object.assign({}, process.env, config.env)
+            env: Object.assign({}, process.env, env)
         })
     }
 
