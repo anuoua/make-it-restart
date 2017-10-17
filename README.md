@@ -1,4 +1,5 @@
-# make-it-restart
+# make-it-restart [![Build Status](https://travis-ci.org/anuoua/make-it-restart.svg?branch=master)](https://travis-ci.org/anuoua/make-it-restart)
+
 yeah! make it restart
 
 ## usage
