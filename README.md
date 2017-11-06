@@ -1,6 +1,6 @@
 # make-it-restart [![Build Status](https://travis-ci.org/anuoua/make-it-restart.svg?branch=master)](https://travis-ci.org/anuoua/make-it-restart)
 
-yeah! make it restart
+Make command or app restart. e.g. make electron/webpack... restart.
 
 ## usage
 
