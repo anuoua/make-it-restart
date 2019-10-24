@@ -1,4 +1,4 @@
-# make-it-restart [![Build Status](https://travis-ci.org/anuoua/make-it-restart.svg?branch=master)](https://travis-ci.org/anuoua/make-it-restart)
+# make-it-restart [![](https://github.com/anuoua/make-it-restart/workflows/Node CI/badge.svg)](https://github.com/anuoua/make-it-restart/actions?workflow=Node+CI)
 
 Make command or app restart. e.g. make electron/webpack... restart.
 
