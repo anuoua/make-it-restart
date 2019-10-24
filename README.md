@@ -1,4 +1,4 @@
-# make-it-restart [![](https://github.com/anuoua/make-it-restart/workflows/Node CI/badge.svg)](https://github.com/anuoua/make-it-restart/actions?workflow=Node+CI)
+# make-it-restart [![Build Status](https://github.com/anuoua/make-it-restart/workflows/Node%20CI/badge.svg)](https://github.com/anuoua/make-it-restart/actions?workflow=Node+CI)
 
 Make command or app restart. e.g. make electron/webpack... restart.
 
